@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 15%;
+    font-family: 'Montserrat';
+    position: fixed;
+    background: linear-gradient(to bottom, #faf9ee88 30%, rgba(255, 255, 255, 0)); /* Degradado blanco a transparente */
+    z-index: 1000;
+}
+.logo{
+    width: 8%;
+}
+header ul{
+    list-style: none;
+    display: flex;
+}
+header li{
+    padding: 5px 30px;
+    transition-duration: 300ms;    
+}
+header li:hover{
+    scale: 1.15;
+}
+header a{
+    text-decoration: none;
+}
+
+/* INICIO: BANNER */
+#banner{        
+    background: url(./img/banner.png);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+#banner div{
+    width: 30%;
+    background-color: rgba(240, 248, 255, 0.719);
+    padding: 8px;
+    border-radius: 5px;
+    transform: skewX(-8deg);
+    margin-bottom: 15px;
+}
