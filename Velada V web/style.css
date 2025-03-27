@@ -14,11 +14,11 @@ header{
     padding: 15px 15%;
     font-family: 'Montserrat';
     position: fixed;
-    background: linear-gradient(to bottom, #faf9ee88 30%, rgba(255, 255, 255, 0)); /* Degradado blanco a transparente */
+    background: linear-gradient(to bottom, #faf9ee9f 10%, rgba(255, 255, 255, 0)); /* Degradado blanco a transparente */
     z-index: 1000;
 }
 .logo{
-    width: 8%;
+    width: 10%;
 }
 header ul{
     list-style: none;
@@ -33,9 +33,11 @@ header li:hover{
 }
 header a{
     text-decoration: none;
+    font-weight: bold;
+    color: #610450; 
 }
 
-/* INICIO: BANNER */
+/* INICIO-SEC: BANNER */
 #banner{        
     background: url(./img/banner.png);
     background-size: cover;
@@ -53,4 +55,9 @@ header a{
     border-radius: 5px;
     transform: skewX(-8deg);
     margin-bottom: 15px;
+}
+
+/* INICIO-SEC: INTRO */
+#intro{
+    height: 90vh;
 }
