@@ -9,6 +9,7 @@ img{
 }
 main{
     font-family: 'Montserrat';
+    overflow-x: hidden;
 }
 header{
     display: flex;
@@ -78,11 +79,18 @@ header a{
 }
 /* INICIO-SEC: INTRO */
 #inicio{
+    width: 98%;
+    
     translate: 20px; /* Desplazado 20px hacia abajo */
     animation: subirTexto 0.7s;
 }
-#inicio div{
-    padding: 0 10%;    
+#inicio > div{
+    padding: 10px 5%;   
+    background-color: whitesmoke    ;
+    margin: 30px auto; 
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */;
 }
 h1{
     text-align: center;
@@ -100,13 +108,11 @@ h1::after{
 	margin-top: 20px;
 }
 #inicio p{
-    line-height: 2rem;
+    line-height: 1.8rem;
 	font-size: 1.05rem;
     text-align: justify;
-    padding-bottom: 20px;
 }
-.ini-white{
-    background-color: white;
+.izq{
     text-align: end;
 }
 h2{
@@ -114,11 +120,14 @@ h2{
     font-size: 2rem;
     padding: 20px 0;
 }
+.estadio{
+    width: 80%;
+    margin: 20px auto;
 
-
-
-
-
+}
+.estadio img{
+    border-radius: 8px;
+}
 
 
 
