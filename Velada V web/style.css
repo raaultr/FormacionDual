@@ -16,13 +16,17 @@ header{
     align-items: center;
     justify-content: center;
     font-family: 'Montserrat';
-    padding: 15px 25%;
     position: absolute;
+    padding: 20px 0;
 }
-.logo{
+nav{
+    display: flex;
+    justify-content: center;
+}
+header .logo{
     transition-duration: 300ms;
-    width: 80px;
-    margin-right: 30px;
+    width: 5%;
+    margin: 0 20px;
 }
 header ul{
     list-style: none;
@@ -30,23 +34,87 @@ header ul{
     align-items: center;
 }
 header li{
-    padding: 15px 30px;
+    padding: 0 40px;
     transition-duration: 300ms;
 }
-header li:hover, .logo:hover{
+header li:hover, header .logo:hover{
     scale: 1.18;
 }
 header a{
     text-decoration: none;
     font-weight: bold;
     color: #610450;
-    font-size: 1.08rem;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
 }
 
-/* -- INICIO-SEC: BANNER --*/
+
+/*-- INICIO --*/
+#inicio .logo{
+    width: 18%;
+    margin: auto;
+    padding-top: 25px;
+    filter: brightness(105%);
+}
+#inicio{
+    background: url(./img/banner3.png);
+    background-size: cover;
+}
+#inicio > div{
+    background-color: #00000015;
+    height: 100vh;
+}
+.options{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.options div{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    margin: 50px 15px;
+
+    transition-duration: 300ms;
+}
+.options div:hover{
+    scale: 1.10;
+}
+.options img{
+    border-radius: 8px;
+    border: 3px solid #cc2a9b; /* borde de un color transparente */
+    box-shadow: 0 0 10px 2px #00000038; /* sombra brillante */ 
+}
+    
+
+
+/* INICIO: CONTADOR */
+#countdown {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.time-box {
+    border-radius: 10px;
+    width: 7%;
+    text-align: center;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+.time-box span {
+    font-size: 2.9rem;
+    font-weight: bold;
+    display: block;
+    color: #000000;
+}
+.time-box p {
+    font-size: 0.9em;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+
+/* -- NOTICIAS-SEC: BANNER --*/
 #banner{        
-    background: url(./img/banner2.png);
+    background: url(./img/banner3.png);
     background-size: cover;
     background-position: center center;
     display: flex;
@@ -67,7 +135,7 @@ header a{
 }
 .banner-txt{
     color: #54002d;
-    width: 30%;
+    width: 20%;
     text-align: center;    
     margin-bottom: 15px;
 
@@ -75,16 +143,18 @@ header a{
     animation: subirTexto 0.7s;
 }
 .banner-txt span{
-    font-size: 1.3rem;
+    font-size: 1.1rem;    
 }
-/* INICIO-SEC: INTRO */
-#inicio{
+
+
+/* NOTICIAS-SEC: INTRO */
+#noticas{
     width: 98%;
     
     translate: 20px; /* Desplazado 20px hacia abajo */
     animation: subirTexto 0.7s;
 }
-#inicio > div{
+#noticas > div{
     padding: 10px 5%;   
     background-color: whitesmoke    ;
     margin: 30px auto; 
@@ -107,13 +177,10 @@ h1::after{
 	width: 40%;
 	margin-top: 20px;
 }
-#inicio p{
+#noticas p{
     line-height: 1.8rem;
 	font-size: 1.05rem;
     text-align: justify;
-}
-.izq{
-    text-align: end;
 }
 h2{
     color: #54002d;
@@ -128,11 +195,6 @@ h2{
 .estadio img{
     border-radius: 8px;
 }
-
-
-
-
-
 
 
 
