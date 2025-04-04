@@ -1,3 +1,4 @@
+/* -- INICIO: CONTADOR -- */
 // Fecha de la Velada del Año V (26 de julio de 2024 a las 20:00)
 const fechaObjetivo = new Date("July 26, 2025 20:00:00").getTime();
 

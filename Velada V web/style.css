@@ -12,21 +12,27 @@ main{
     overflow-x: hidden;
 }
 header{
+    position: relative;
+}
+header::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, #610450, #ff007f, #610450); /* Color brillante */
+    box-shadow: 0 0 15px rgba(97, 4, 80, 0.8); /* Efecto de resplandor */
+    animation: glow 1.5s infinite alternate; /* Animación para hacer que brille */
+}
+nav{
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: 'Montserrat';
-    position: absolute;
     padding: 20px 0;
-}
-nav{
-    display: flex;
-    justify-content: center;
-    margin-left: 60px;
 }
 header .logo{
     transition-duration: 300ms;
-    width: 5%;
+    width: 90px;
     margin: 0 20px;
 }
 header ul{
@@ -39,14 +45,14 @@ header li{
     transition-duration: 300ms;
 }
 header li:hover, header .logo:hover{
-    scale: 1.18;
+    scale: 1.16;
 }
 header a{
     text-decoration: none;
     font-weight: bold;
     color: #610450;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
-    font-size: 1.1rem;
+    font-size: 1.15rem;
 }
 
 
@@ -56,7 +62,6 @@ header a{
     margin: auto;
     padding-top: 35px;
     filter: brightness(105%);
-
     animation: entradaDesdeArriba  1s ease-out forwards;
 }
 #inicio{
@@ -71,9 +76,7 @@ header a{
     width: 100%;
     display: flex;
     justify-content: center;
-
     animation: entradaDesdeAbajo 1s ease-out forwards;
-    animation-delay: 1,4;
 }
 .options div{
     width: 25%;
@@ -93,15 +96,12 @@ header a{
     border: 3px solid #cc2a9b; /* borde de un color transparente */
     box-shadow: 0 0 10px 2px #cc2a9b57; /* sombra brillante */ 
 }
-    
-
 
 /* INICIO: CONTADOR */
 #countdown {
     display: flex;
     justify-content: center;
     margin: 40px 0;
-
     animation: entradaDesdeAbajo 1s ease-out forwards;
 }
 .time-box {
@@ -127,7 +127,6 @@ header a{
     background-color: rgba(255, 255, 255, 0.432);
     margin-top: 50px;
     padding: 5px 0;
-
     animation: entradaDesdeAbajo 1s ease-out forwards;
 }
 .redes img{
@@ -135,50 +134,49 @@ header a{
     margin: 0 10px;
 }
 
-
-/* -- NOTICIAS-SEC: BANNER --*/
-#banner{        
-    background: url(./img/banner3.png);
-    background-size: cover;
-    background-position: center center;
+/* -- NOTICIAS-SEC: SLIDER --*/
+.slider-container{
     display: flex;
-    align-items: end;
-    justify-content: space-between;
-    height: 100vh;
-    width: 100%;
-    border-bottom: solid #54002d 2px;
-}
-#banner > div:nth-child(2){
-    width: 23%;
-    background-color: #f9f9eda9;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */;
-    padding: 8px;
-    border-radius: 5px;
-    transform: skewX(-8deg);
-    margin-bottom: 20px;
-}
-.banner-txt{
-    color: #54002d;
-    width: 20%;
-    text-align: center;    
-    margin-bottom: 15px;
-
+    align-items: center;
+    justify-content: center;
+    margin: 15px auto;
+    padding: 20px;
+    text-align: center;
     translate: 20px; /* Desplazado 20px hacia abajo */
     animation: subirTexto 0.7s;
 }
-.banner-txt span{
-    font-size: 1.1rem;    
+.slider-card {
+    flex-shrink: 0;
+    display: flex;    
+    align-items: center ;
 }
-
+.card {
+    flex-shrink: 0; /* Evita que se achiquen las tarjetas */
+    width: 400px;
+    transform: scale(0.9); /* Tarjetas no activas un poco más pequeñas */
+    opacity: 0.6; /* Tarjetas no activas un poco desvanecidas */
+    text-align: center;
+}
+.card h3 {
+    margin-top: 8px;
+    font-size: 16px;
+}
+button {
+    background-color: #111;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 22px;
+    cursor: pointer;
+}
 
 /* NOTICIAS-SEC: INTRO */
 #noticas{
-    width: 98%;
-    
+    width: 98%;    
     translate: 20px; /* Desplazado 20px hacia abajo */
     animation: subirTexto 0.7s;
 }
-#noticas > div{
+#noticas > article{
     padding: 10px 5%;   
     background-color: whitesmoke    ;
     margin: 30px auto; 
