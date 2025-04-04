@@ -22,6 +22,7 @@ header{
 nav{
     display: flex;
     justify-content: center;
+    margin-left: 60px;
 }
 header .logo{
     transition-duration: 300ms;
@@ -45,15 +46,18 @@ header a{
     font-weight: bold;
     color: #610450;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+    font-size: 1.1rem;
 }
 
 
 /*-- INICIO --*/
 #inicio .logo{
-    width: 18%;
+    width: 21%;
     margin: auto;
-    padding-top: 25px;
+    padding-top: 35px;
     filter: brightness(105%);
+
+    animation: entradaDesdeArriba  1s ease-out forwards;
 }
 #inicio{
     background: url(./img/banner3.png);
@@ -67,22 +71,27 @@ header a{
     width: 100%;
     display: flex;
     justify-content: center;
+
+    animation: entradaDesdeAbajo 1s ease-out forwards;
+    animation-delay: 1,4;
 }
 .options div{
     width: 25%;
     display: flex;
-    flex-direction: column;
-    margin: 50px 15px;
-
+    flex-direction: column;  
+    margin-top: 20px;  
+}
+.options div a, .redes a{
+    margin: 4px 15px;      
     transition-duration: 300ms;
 }
-.options div:hover{
+.options div a:hover, .redes a:hover{
     scale: 1.10;
 }
 .options img{
     border-radius: 8px;
     border: 3px solid #cc2a9b; /* borde de un color transparente */
-    box-shadow: 0 0 10px 2px #00000038; /* sombra brillante */ 
+    box-shadow: 0 0 10px 2px #cc2a9b57; /* sombra brillante */ 
 }
     
 
@@ -91,7 +100,9 @@ header a{
 #countdown {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin: 40px 0;
+
+    animation: entradaDesdeAbajo 1s ease-out forwards;
 }
 .time-box {
     border-radius: 10px;
@@ -100,15 +111,28 @@ header a{
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 .time-box span {
-    font-size: 2.9rem;
+    font-size: 3.2rem;
     font-weight: bold;
     display: block;
     color: #000000;
 }
 .time-box p {
-    font-size: 0.9em;
+    font-size: 1.1em;
     color: #000000;
     text-transform: uppercase;
+}
+.redes{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.432);
+    margin-top: 50px;
+    padding: 5px 0;
+
+    animation: entradaDesdeAbajo 1s ease-out forwards;
+}
+.redes img{
+    width: 25px;
+    margin: 0 10px;
 }
 
 
@@ -190,7 +214,6 @@ h2{
 .estadio{
     width: 80%;
     margin: 20px auto;
-
 }
 .estadio img{
     border-radius: 8px;
@@ -205,7 +228,26 @@ h2{
 
 
 
-
+@keyframes entradaDesdeArriba {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+  @keyframes entradaDesdeAbajo {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
 @keyframes subirTexto{
     from {
         opacity: 0;
@@ -216,16 +258,3 @@ h2{
         transform: translateY(0);
     }
 }
-@keyframes reveal { /* animacion de aparicion con scroll*/
-    from{
-        opacity: 0;
-        translate: 0 100px;
-        scale: 0.5;
-    }
-    to{
-        opacity: 1;
-    }
-}
-/* animation: reveal linear both;
-animation-timeline: view();
-animation-range: entry 20% cover 30%; */
