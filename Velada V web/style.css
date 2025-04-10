@@ -243,20 +243,20 @@ h2{
     filter: brightness(80%);
 }
 .fighters-container {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 10px;
 }
 .fighter {
-  text-align: center;
-  width: 30%;
+    text-align: center;
+    width: 30%;
 }
 .fighter-image {
-  width: 100%;
-  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%); /* filtro foto borrosa por debajo*/
-  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
-  border-radius: 8px;
+    width: 100%;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%); /* filtro foto borrosa por debajo*/
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
+    border-radius: 8px;
 }
 .fighter-name {
   font-size: 1.2rem;

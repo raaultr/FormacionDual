@@ -53,7 +53,7 @@ function showFighter(fighter) {
         westcol: 'Westcol'
     };
   
-    // Lógica para mostrar las dos imágenes de los luchadores (el seleccionado y el oponente)
+    // Lógica para mostrar las dos imágenes de los luchadores
     let opponent = '';
     switch (fighter) {
       case 'pereira':
