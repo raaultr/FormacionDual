@@ -29,17 +29,53 @@ function actualizarCuentaRegresiva() {
 setInterval(actualizarCuentaRegresiva, 1000); // Llama a la función cada segundo para actualizar la cuenta regresiva
 actualizarCuentaRegresiva(); // Llama a la función inmediatamente para evitar que aparezcan ceros al cargar la página
 
-
+/* -- COMBATES: IMAGENES MENU -- */
 function showFighter(fighter) {
-    const fighterImage = document.getElementById('fighter-image');
-  
-    // Ruta de las imágenes grandes
+    const fightersContainer = document.getElementById('fighters');
+    
+    // Rutas de las imágenes grandes
     const images = {
-      ryu: 'ryu_large.jpg',
-      ken: 'ken_large.jpg',
-      // Agrega más luchadores aquí
+        rivaldios: './img/rivaldios.png',
+        pereira: './img/pereira.png',
+        viruzz: './img/viruzz.png',
+        mazza: './img/mazza.png',
+        grefg: './img/grefg.png',
+        westcol: './img/westcol.png',
     };
   
-    fighterImage.src = images[fighter];
-    fighterImage.style.display = 'block';
+    // Nombres de los luchadores
+    const names = {
+        rivaldios: 'Rivaldios',
+        pereira: 'Pereira',
+        viruzz: 'Viruzz',
+        mazza: 'Tomas Mazza',
+        grefg: 'TheGrefg',
+        westcol: 'Westcol'
+    };
+  
+    // Lógica para mostrar las dos imágenes de los luchadores (el seleccionado y el oponente)
+    let opponent = '';
+    switch (fighter) {
+      case 'pereira':
+        opponent = 'rivaldios';
+        break;
+    case 'viruzz':
+        opponent = 'mazza';
+        break;
+    case 'grefg':
+    opponent = 'westcol';
+    break;
+    }
+  
+    // Actualiza el contenido de la sección de luchadores
+    fightersContainer.innerHTML = `
+      <div class="fighter">
+        <img src="${images[fighter]}" alt="${names[fighter]}" class="fighter-image">
+        <div class="fighter-name">${names[fighter]}</div>
+      </div>
+      <div class="fighter">
+        <img src="${images[opponent]}" alt="${names[opponent]}" class="fighter-image">
+        <div class="fighter-name">${names[opponent]}</div>
+      </div>
+    `;
   }
