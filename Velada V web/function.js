@@ -28,3 +28,18 @@ function actualizarCuentaRegresiva() {
 
 setInterval(actualizarCuentaRegresiva, 1000); // Llama a la función cada segundo para actualizar la cuenta regresiva
 actualizarCuentaRegresiva(); // Llama a la función inmediatamente para evitar que aparezcan ceros al cargar la página
+
+
+function showFighter(fighter) {
+    const fighterImage = document.getElementById('fighter-image');
+  
+    // Ruta de las imágenes grandes
+    const images = {
+      ryu: 'ryu_large.jpg',
+      ken: 'ken_large.jpg',
+      // Agrega más luchadores aquí
+    };
+  
+    fighterImage.src = images[fighter];
+    fighterImage.style.display = 'block';
+  }
