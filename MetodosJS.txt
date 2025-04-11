@@ -1,0 +1,11 @@
+querySelector: Selecciona el primer elemento que encuentres con el nombre o la clase que pidas.
+
+querySelectorAll: Selecciona todos los elementos que encuentres con el nombre o la clase que pidas.
+
+getElementById: Busca un elemento usando el id que le hayas puesto.
+
+getElementsByClassName: Busca todos los elementos que tengan una clase específica.
+
+getElementsByTagName: Busca todos los elementos de un tipo específico, como <p> o <div>.
+
+children: Te da todos los hijos directos de un elemento.

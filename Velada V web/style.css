@@ -201,6 +201,7 @@ h1::after{
     line-height: 1.8rem;
 	font-size: 1.05rem;
     text-align: justify;
+    margin-bottom: 20px;
 }
 h2{
     color: #54002d;
@@ -216,6 +217,14 @@ h2{
     color: #0acddb;
     text-decoration: none;
 }
+#noticias article:nth-child(6){
+    text-align: center;
+}
+.spons{
+    width: 30%;
+    margin: 15px 0;
+}
+
 
 /* -- COMABTES -- */
 #combates header a{
