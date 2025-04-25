@@ -20,6 +20,7 @@ div{
   height: 100px;
   margin: 10px auto;
   font-family: 'Montserrat';
+  padding: 8px;
 }
 #add{
   font-family: 'Montserrat';
