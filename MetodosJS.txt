@@ -9,3 +9,7 @@ getElementsByClassName: Busca todos los elementos que tengan una clase específi
 getElementsByTagName: Busca todos los elementos de un tipo específico, como <p> o <div>.
 
 children: Te da todos los hijos directos de un elemento.
+
+addEventListener("click", () => { ... }): Cuando el usuario hace clic en el botón, se ejecuta el código que está dentro de las llaves { ... }
+
+appendChild(): agregar un nuevo hijo
