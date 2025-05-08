@@ -32,5 +32,3 @@ console.log(sumar(2, 4))
 // Ejemplo 3 Tipos de Arrays
 let numeros: number[] = [10, 20, 30, 40]
 console.log(numeros)
-
-
