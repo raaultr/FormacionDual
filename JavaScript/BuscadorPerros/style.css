@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+section{
+    width: 100%;
+    margin: auto;
+}
+input{    
+    margin: 30px auto;
+    display: flex;
+    width: 25%;
+    padding: 12px;
+    border: 1px solid rgb(141, 140, 140);
+    border-radius: 100px;
+}
+#gallery{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 60px;
+}
+.dog-card{
+    width: 250px;
+    text-align: center;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+.dog-card img{    
+    border-radius: 6px 6px 0 0;
+}
+p{
+    font-weight: bold;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    margin: 5px 0;
+}
