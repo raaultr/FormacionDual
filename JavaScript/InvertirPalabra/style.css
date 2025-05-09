@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;    
+}
+div{
+    text-align: center;
+    width: 100%;
+}
+input, button{
+    font-family: 'Montserrat';
+    padding: 15px 20px;
+    border: 1px solid rgb(121, 120, 120);
+    border-radius: 8px;
+}
+input{
+    width: 20%;    
+}
+button{
+    cursor: pointer;
+}
+#resultado{
+    margin-top: 20px;
+    font-weight: bold;
+    font-family: 'Montserrat';  
+}
