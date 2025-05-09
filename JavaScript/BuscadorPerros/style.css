@@ -39,3 +39,19 @@ p{
     text-transform: uppercase;
     margin: 5px 0;
 }
+#tamanios{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+    margin: 40px;
+    font-family: 'Montserrat';
+}
+li{
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+li:hover{
+    background-color: #d3d2d2;
+}

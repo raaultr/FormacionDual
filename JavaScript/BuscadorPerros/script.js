@@ -19,3 +19,19 @@ document.getElementById("search").addEventListener("input", function(){
         }
     })
 })
+
+function filtrar(tamanio){
+    const dogs = document.querySelectorAll('.dog-card')
+
+    dogs.forEach( div => {
+        const img = div.querySelector('img');
+        const clase = img.classList;
+
+        if(tamanio === 'todos'){
+            div.style.display = 'block';
+        } else {
+            div.style.display = clase.contains(tamanio) ? 'block' : 'none';
+        }
+
+    })
+}

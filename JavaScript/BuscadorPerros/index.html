@@ -10,30 +10,39 @@
 <body>
     <section>
         <input type="text" id="search" placeholder="Buscar raza...">
-    
+
+        <nav>
+            <ul id="tamanios">
+                <li onclick="filtrar('todos')">Todos</li>
+                <li onclick="filtrar('pequenio')">Pequeños</li>
+                <li onclick="filtrar('mediano')">Medianos</li>
+                <li onclick="filtrar('grande')">Grandes</li>
+            </ul>
+        </nav>
+
         <div id="gallery">            
             <div class="dog-card">
-                <img src="./img/beagle.jpg" alt="Beagle">
+                <img src="./img/beagle.jpg" alt="Beagle" class="mediano">
                 <p>Beagle</p>
             </div>
             <div class="dog-card">
-                <img src="./img/husky2.jpg" alt="Husky">
+                <img src="./img/husky2.jpg" alt="Husky" class="mediano">
                 <p>Husky Siberiano</p>
             </div>
             <div class="dog-card">
-                <img src="./img/yorkshire.jpg" alt="Yorkshire">
+                <img src="./img/yorkshire.jpg" alt="Yorkshire" class="pequenio">
                 <p>Yorkshire</p>
             </div>
             <div class="dog-card">
-                <img src="./img/pitbull.jpg" alt="Pitbull">
+                <img src="./img/pitbull.jpg" alt="Pitbull" class="mediano">
                 <p>Pitbull</p>
             </div>
             <div class="dog-card">
-                <img src="./img/labrador.jpg" alt="Labrador">
+                <img src="./img/labrador.jpg" alt="Labrador" class="grande">
                 <p>Labrador</p>
             </div>
             <div class="dog-card">
-                <img src="./img/rottweiler.jpg" alt="Rottweiler">
+                <img src="./img/rottweiler.jpg" alt="Rottweiler" class="grande">
                 <p>Rottweiler</p>
             </div>
         </div>
