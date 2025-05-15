@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+img{
+    max-width: 100%;
+}
+.logo{
+    width: 250px;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px 5rem;
+    background-color: #ececec;
+    width: 100%;
+}
+.nav-list{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+.nav-list a{
+    text-decoration: none;
+    color: #1c1c1c;
+}
+.abrir-menu, .cerrar-menu{ 
+    display: none; /* Solo quiero que se muestre en móvil*/
+    border: 0;
+    font-size: 1.3rem;
+    background-color: transparent;
+    cursor: pointer;
+}
+.cerrar-menu{
+    color: #ececec;
+}
+
+@media screen and (max-width: 768px){
+    .abrir-menu, .cerrar-menu{
+        display: block;
+    }
+
+    /* Estilizar la nav de movil */
+    .nav{
+        opacity: 0;
+        visibility: hidden;
+
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 2rem;
+        position: absolute;
+        top: 0;     /* desde arriba del todo*/
+        right: 0;   /* peguado a la derecha */
+        bottom: 0;  /* hasta abajo del todo */
+        background-color: #1c1c1c;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.4);
+    }
+    .nav.visible{   /* Queremos que cuando le demos a Abrir se vea el nav */
+        opacity: 1;
+        visibility: visible;
+    }
+    .nav-list{
+        flex-direction: column;
+        align-items: end;
+    }
+    .nav-list a{
+        color: #ececec;
+    }
+}
