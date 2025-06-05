@@ -1,4 +1,4 @@
-/* .container{
+.container{
     background-color: lightsalmon;
     border: 3px solid black;
     border-radius: 10px;
@@ -12,11 +12,11 @@
     border: 2px solid #09f;
     border-radius: 6px;
 } 
-*/
+
 
 
 /* --- PRATICA 1 ---*/
-div{
+#ej div{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 16px;
